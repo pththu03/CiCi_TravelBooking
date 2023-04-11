@@ -8,7 +8,7 @@
     width: 1440px;
     height: 1033px;
     display: grid;
-    grid-template-rows: 76px auto 62px;
+    grid-template-rows: 76px 895px 62px;
 }
 
 /* header */
@@ -80,13 +80,13 @@
     padding: 40px 0px 64px 0px;
 }
 
-#content #content__bags{
+#content .content__bags{
     width: 260px; 
     height: 224px;
     padding: 0px 590px 0px 590px;
 }
 
-#content #content__title{
+#content .content__title{
     font-size: 32px; 
     line-height: 48px;
     font-weight: bold;
@@ -94,7 +94,7 @@
     padding: 28px 455px 32px 455px;
 }
 
-#content #content__status{
+#content .content__status{
     position: absolute; 
     top: 448px; 
     left: 462px; 
@@ -120,11 +120,11 @@
     height: 16px; 
 }
 
-#content__status #content__time{
+.content__status .content__time{
     padding: 24px 24px 12px 24px;
 }
 
-#content__status #line1{
+.content__status .line1{
     position: absolute; 
     top: 172px; 
     left: 24px;
@@ -134,7 +134,7 @@
     border-style: solid;
 }
 
-#content__status #content__price, #content__code{
+.content__status .content__price, .content__code{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,30 +142,30 @@
     padding-right: 24px;
 }
 
-#content__status #content__price{
+.content__status .content__price{
     padding-top: 24px;
 }
 
-#content__status #content__info{
+.content__status .content__info{
     display: flex;
     align-items: flex-start;
     padding: 12px 0px 24px 24px;
 }
 
-#content__info #bedroom{
+.content__info .bedroom{
     width: 269px; 
     height: 158px; 
     border-radius: 6px;
 }
 
-#content__info #info__place{
+.content__info .info__place{
     padding-left: 12px;
     font-size: 12px; 
     line-height: 20px; 
     color: #565E6CFF;
 }
 
-#info__type{
+.info__type{
     padding-left: 12px;
     padding-top: 2px;
     font-size: 16px; 
@@ -174,7 +174,7 @@
     color: #323842FF;
 }
 
-#line2{
+.line2{
     position: absolute; 
     top: 337px; 
     left: 305px; 
@@ -185,7 +185,7 @@
     border-style: solid;
 }
 
-#info__room{
+.info__room{
     padding-left: 12px;
     padding-top: 21px;
     font-size: 11px; 
@@ -193,14 +193,14 @@
     color: #565E6CFF;
 }
 
-#content__info #info__rating{
+.content__info .info__rating{
     padding-left: 12px;
     padding-top: 53px;
     display: flex;
     align-items: center;
 }
 
-#assess{
+.assess{
     padding-left: 2px;
     font-size: 12px; 
     font-weight: bold;
@@ -208,9 +208,40 @@
     color: #171A1FFF;
 }
 
-#view {
+.view {
     padding-left: 2px;
     font-size: 12px; 
     line-height: 20px; 
     color: #9095A0FF;
+}
+
+/* footer */
+#footer{
+    grid-row: 3/4;
+    background: #F8F9FAFF;
+    padding: 0px 132px 0px 132px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer .footer__note ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    grid-column-gap: 4px;
+}
+
+.footer__note .footer__text{
+    font-size: 14px; 
+    line-height: 22px; 
+    color: #171A1FFF;
+}
+
+#footer .footer__internet ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 16px;
 }
