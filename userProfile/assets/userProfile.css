@@ -1,14 +1,14 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 #container {
     width: 1440px;
     height: 900px;
     display: grid;
-    grid-template-rows: 76px auto 275px;
+    grid-template-rows: 76px 549px 275px;
 }
 
 /* header */
@@ -72,4 +72,206 @@
     border-radius: 18px; 
     width: 36px; 
     height: 36px;
+}
+
+/* content */
+#content {
+    grid-row: 2/3;
+    grid-template-columns: 431px 1009px;
+    display: flex;
+}
+
+/* phan ben trai */
+#content .content__settings {
+    grid-column: 1/2;
+    padding: 44px 0px 339px 132px;
+}
+
+/* thuoc tinh chung */
+.list {
+    display: flex;
+    align-items: center;
+}
+
+.list__text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #323842FF;
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.button {
+    height: 36px;
+    width: 36px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F3F4F6FF;
+    opacity: 1;
+    border: none;
+    border-radius: 18px;
+    margin: 15px;
+}
+
+.fa-user,
+.fa-credit-card,
+.fa-lock-keyhole,
+.fa-sliders-simple,
+.fa-bell {
+    color: #565E6C;
+}
+
+/* thuoc tinh rieng */
+.settings__list {
+    width: 299px;
+    height: 332px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px #171a1f, 0px 0px 2px #171a1f;
+}
+
+.fa-caret-left {
+    padding-right: 2px;
+    color: #565E6CFF;
+}
+
+.text__back {
+    font-size: 12px;
+    line-height: 20px;
+    color: #565E6C;
+    font-family: "Montserrat", sans-serif;
+}
+
+.text__acc {
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 48px;
+    color: #171a1f;
+    padding: 6px 0 36px 0;
+}
+
+.list__text:hover {
+    color: #29C3E5FF;
+}
+
+.list__text:hover .button {
+    background-color: #BFEDF7FF;
+}
+
+.list__text:hover i {
+    color: #117389FF;
+}
+
+/* phan ben phai */
+#content .content__info {
+    grid-column: 2/3;
+    width: 781px;
+    padding: 156px 132px 0px 96px;
+}
+
+.info_avt {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+}
+
+.fa-pen-to-square {
+    color: #fff;
+    width: 14px;
+    height: 14px;
+}
+
+.edit {
+    position: absolute;
+    top: 268px;
+    left: 576px;
+    width: 28px;
+    height: 28px;
+    background: #323842FF;
+    border-radius: 14px;
+    border: none;
+}
+
+/* Phan dien thong tin */
+.info__input {
+    border: none;
+    padding-top: 32px;
+}
+
+/* thuoc tinh chung */
+.info__input .input {
+    margin-bottom: 33px;
+}
+
+input {
+    width: 215px;
+    height: 29px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    border-width: 0;
+    box-shadow: 0 1px 0 #ffffff;
+    outline: none;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "Montserrat", sans-serif;
+    color: #171A1F;
+}
+
+.input:hover {
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 0 #ccc;
+}
+
+.input__edit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input__text {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #323842FF;
+    text-decoration: underline;
+    padding-bottom: 31px;
+}
+
+/* thuoc tinh chung cua cac line */
+.content__line {
+    position: absolute;
+    width: 781px;
+    left: 527px;
+    border-width: 1px;
+    border-color: #DEE1E6FF;
+    border-style: solid;
+}
+
+/* thuoc tinh rieng */
+.line1 {
+    top: 396px;
+}
+
+.line2 {
+    top: 481px;
+}
+
+.line3 {
+    top: 566px;
+}
+
+.line4 {
+    top: 651px;
+
+}
+
+.line5 {
+    top: 736px;
 }

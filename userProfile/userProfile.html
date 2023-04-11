@@ -7,9 +7,6 @@
     <title>User Profile</title>
     <link rel="stylesheet" href="./assets/userProfile.css">
     <link rel="stylesheet" href="/Fontawesome_v6/Fontawesome_v6/css/all.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="container">
@@ -31,6 +28,84 @@
                     <li><img src="./assets/img/Bell.png" alt="Bell" class="icon"></li>
                     <li><img src="./assets/img/F.jpg" alt="Avatar" class="avt"></li>
                 </ul> 
+            </div>
+        </div>
+        <!-- Content -->
+        <!-- Content -->
+        <div id="content">
+            <!-- Phan ben trai -->
+            <div class="content__settings">
+                <p class="text__back"><i class="fa-solid fa-caret-left"></i>Back</p>
+                <p class="text__acc">Account Settings</p>
+                <div class="settings__list">
+                    <p class="list__text"><button class="button"><i class="fa-solid fa-user"></i></button>Personal info</p>
+                    <p class="list__text"><button class="button"><i class="fa-regular fa-credit-card"></i></button>Payment details</p>           
+                    <p class="list__text"><button class="button"><i class="fa-solid fa-lock-keyhole"></i></button>Security</p>
+                    <p class="list__text"><button class="button"><i class="fa-regular fa-sliders-simple"></i></button>Preferences</p>
+                    <p class="list__text"><button class="button"><i class="fa-solid fa-bell"></i></button>Email notification</p>                    
+                </div>
+            </div>
+            <!-- Phan ben phai -->
+            <div class="content__info">
+                <div class="info__avt">
+                    <img src="./assets/img/F.jpg" alt="avt" class="info_avt">
+                    <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                </div>
+                <div class="info__input">
+                    <!-- name -->
+                    <div class="input__edit">
+                        <div class="input">
+                            <label for="name">Full name</label>
+                            <input type="text" id="name">
+                        </div>
+                        <p class="input__text">Edit</p>
+                    </div>
+                    <hr class="content__line line1">
+                    <!-- Email -->
+                    <div class="input__edit">
+                        <div class="input">
+                            <label for="email">Email</label>
+                            <input type="text" id="email">
+                        </div>
+                        <p class="input__text">Edit</p>
+                    </div>
+                    <hr class="content__line line2">
+                    <!-- Gender -->
+                    <div class="input__edit">
+                        <div class="input">
+                            <label for="gender">Gender</label>
+                            <input type="text" id="gender">
+                        </div>
+                        <p class="input__text">Edit</p>
+                    </div>
+                    <hr class="content__line line3">
+                    <!-- Birthday -->
+                    <div class="input__edit">
+                        <div class="input">
+                            <label for="birthday">Date of birth</label>
+                            <input type="text" id="birthday">
+                        </div>
+                        <p class="input__text">Edit</p>
+                    </div>
+                    <hr class="content__line line4">
+                    <!-- Phone -->
+                    <div class="input__edit">
+                        <div class="input">
+                            <label for="phone">Phone number</label>
+                            <input type="text" id="phone">
+                        </div>
+                        <p class="input__text">Edit</p>
+                    </div>
+                    <hr class="content__line line5">
+                    <!-- Emergency contact -->
+                    <div class="input__edit">
+                        <div class="input">
+                            <label for="contact">Emergency contact</label>
+                            <input type="text" id="contact">
+                        </div>
+                        <p class="input__text">Add</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
