@@ -73,3 +73,144 @@
     width: 36px; 
     height: 36px;
 }
+
+/* content */
+#content{
+    grid-row: 2/3;
+    padding: 40px 0px 64px 0px;
+}
+
+#content #content__bags{
+    width: 260px; 
+    height: 224px;
+    padding: 0px 590px 0px 590px;
+}
+
+#content #content__title{
+    font-size: 32px; 
+    line-height: 48px;
+    font-weight: bold;
+    color: #171A1FFF;
+    padding: 28px 455px 32px 455px;
+}
+
+#content #content__status{
+    position: absolute; 
+    top: 448px; 
+    left: 462px; 
+    width: 516px; 
+    height: 459px; 
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px #171a1f, 0px 0px 1px #171a1f;
+}
+
+/* thuộc tính chung phần content */
+#content .content__text{
+    font-size: 14px; 
+    line-height: 22px; 
+    color: #171a1f;
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+#content .content__icon{
+    padding-right: 8px;
+    width: 16px; 
+    height: 16px; 
+}
+
+#content__status #content__time{
+    padding: 24px 24px 12px 24px;
+}
+
+#content__status #line1{
+    position: absolute; 
+    top: 172px; 
+    left: 24px;
+    width: 468px; 
+    border-width: 1px; 
+    border-color: #DEE1E6FF; 
+    border-style: solid;
+}
+
+#content__status #content__price, #content__code{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#content__status #content__price{
+    padding-top: 24px;
+}
+
+#content__status #content__info{
+    display: flex;
+    align-items: flex-start;
+    padding: 12px 0px 24px 24px;
+}
+
+#content__info #bedroom{
+    width: 269px; 
+    height: 158px; 
+    border-radius: 6px;
+}
+
+#content__info #info__place{
+    padding-left: 12px;
+    font-size: 12px; 
+    line-height: 20px; 
+    color: #565E6CFF;
+}
+
+#info__type{
+    padding-left: 12px;
+    padding-top: 2px;
+    font-size: 16px; 
+    font-weight: bold;
+    line-height: 26px; 
+    color: #323842FF;
+}
+
+#line2{
+    position: absolute; 
+    top: 337px; 
+    left: 305px; 
+    width: 71.01px; 
+    height: 0px; 
+    border-width: 1px; 
+    border-color: #DEE1E6FF;
+    border-style: solid;
+}
+
+#info__room{
+    padding-left: 12px;
+    padding-top: 21px;
+    font-size: 11px; 
+    line-height: 18px; 
+    color: #565E6CFF;
+}
+
+#content__info #info__rating{
+    padding-left: 12px;
+    padding-top: 53px;
+    display: flex;
+    align-items: center;
+}
+
+#assess{
+    padding-left: 2px;
+    font-size: 12px; 
+    font-weight: bold;
+    line-height: 20px; 
+    color: #171A1FFF;
+}
+
+#view {
+    padding-left: 2px;
+    font-size: 12px; 
+    line-height: 20px; 
+    color: #9095A0FF;
+}
