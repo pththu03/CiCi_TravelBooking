@@ -82,3 +82,226 @@
     height: 100%;
     border-radius: 18px;
 }
+/* Content*/
+.content {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    background-color: bisque;
+    margin: 76px;
+}
+.border_search {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 2%;
+    position: absolute;
+    top: 1%;
+    border: none;
+    border-radius: 38px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+}
+.border_search .search + .search {
+    min-width: 0.5%;
+}
+.border_search .search label,input {
+    font-size: 14px;
+}
+.border_search .search label {
+    font-weight: bold;
+}
+.border_search .search input {
+    border: none;
+    outline: none;
+}
+.border_search .search--button {
+    padding: 1.2% 1.5%;
+    border-radius: 38px;
+    background-color: #00BDD6;
+}
+.border_search .search--button i {
+    color: #fff;
+    font-size: 14px;
+}
+.border_banner {
+    width: 80%;
+    height: 640px;
+    position: absolute;
+    top: 2%;
+}
+.border_banner .banner {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+.border_banner .text_banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+/*  <!-- A signature of excellence --> */
+.border_travel {
+    width: 80%;
+    position: absolute;
+    top: 26%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.signature--city {
+    width: 100%;
+}
+.signature--city p {
+    margin-left: 3%;
+}
+.signature--city .text_signature {
+    font-size: 24px;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-bottom: 2%;
+    color: #171A1FFF;
+}
+.signature--city .city {
+    width: 100%;
+    height: 382px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.city div {
+    flex: 1;
+    height: 100%;
+}
+.city div + div {
+    margin-left: 1%;
+}
+.city > div .city_photo {
+    width: 100%;
+    height: 80%;
+    border-radius: 4px;
+}
+.city .city_name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #171A1FFF;
+}
+.city .detail_city {
+    font-size: 12px;
+    color: #9095A0FF;;
+}
+.signature--room {
+    width: 85%;
+    height: 480px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.signature--room > div {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+.signature--room > div + div {
+    margin-left: 1%;
+}
+.signature--room div {
+    position: relative;
+}
+.signature--room div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+.signature--room .room2_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.signature--room .room2_3 div {
+    height: 49%;
+}
+.signature--room div .text {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
+.signature--room div .room_name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+.signature--room div .detail_room {
+    font-size: 12px;
+    color: #fff;
+}
+/* <!-- Find a new possibilities --> */
+.border_possibilities {
+    width: 80%;
+    position: absolute;
+    top: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.border_possibilities .text_possibilities {
+    font-size: 24px; 
+    font-weight: 300;
+    color: #171A1FFF;
+    text-transform: uppercase;
+    padding-bottom: 2%;
+}
+.travel_possibilities {
+    width: 100%;
+    height: 626px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.travel_possibilities .news_possi {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.travel_possibilities .news_possi + .news_possi {
+    padding-left: 1%;
+    box-sizing: border-box;
+}
+.travel_possibilities .news_possi img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+.news_possi .news_text {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 40px; 
+    font-weight: bold;
+    max-width: 45%;
+    color: #FFFFFFFF; 
+}
+.news_possi button {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 14px; 
+    padding: 1% 2%;
+    color: #171A1FFF; 
+    background: #FFFFFFFF; 
+    border-radius: 6px;
+    outline: none;
+    border: none;
+}
