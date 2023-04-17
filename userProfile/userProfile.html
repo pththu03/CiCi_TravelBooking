@@ -4,162 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile</title>
     <link rel="stylesheet" href="./assets/userProfile.css">
     <link rel="stylesheet" href="/Fontawesome_v6/Fontawesome_v6/css/all.css">
+    <title>User Profile</title>
 </head>
 <body>
-    <div id="container">
+    <div class="container">
         <!-- header -->
-        <div id="header">
-            <img src="./assets/img/logo.png" alt="Logo" class="header__logo">
-            <div class="header__menu">
-                <ul>
-                    <li>Place to stay</li>
-                    <li>Experiences</li>
-                    <li>Discover</li>
-                </ul>
-            </div>
-            <div class="header__icons">
-                <ul>
-                    <li class="text_USD">USD</li>
-                    <li><img src="./assets/img/Chat_dots.png" alt="Chat dots" class="icon"></li>
-                    <li><img src="./assets/img/Globe.png" alt="Globe" class="icon"></li>
-                    <li><img src="./assets/img/Bell.png" alt="Bell" class="icon"></li>
-                    <li><img src="./assets/img/F.jpg" alt="Avatar" class="avt"></li>
-                </ul> 
-            </div>
-        </div>
-        <!-- Content -->
-        <!-- Content -->
-        <div id="content">
-            <!-- Phan ben trai -->
-            <div class="content__settings">
-                <p class="text__back"><i class="fa-solid fa-caret-left"></i>Back</p>
-                <p class="text__acc">Account Settings</p>
-                <div class="settings__list">
-                    <p class="list__text"><button class="button"><i class="fa-solid fa-user"></i></button>Personal info</p>
-                    <p class="list__text"><button class="button"><i class="fa-regular fa-credit-card"></i></button>Payment details</p>           
-                    <p class="list__text"><button class="button"><i class="fa-solid fa-lock-keyhole"></i></button>Security</p>
-                    <p class="list__text"><button class="button"><i class="fa-regular fa-sliders-simple"></i></button>Preferences</p>
-                    <p class="list__text"><button class="button"><i class="fa-solid fa-bell"></i></button>Email notification</p>                    
+        <div class="header">
+            <!-- header logo -->
+            <div class="header__logo--left">
+                <!-- logo -->
+                <div class="border_logo">
+                    <img src="./assets/img/logo.png" alt="Logo CiCi" class="logo">
                 </div>
-            </div>
-            <!-- Phan ben phai -->
-            <div class="content__info">
-                <div class="info__avt">
-                    <img src="./assets/img/F.jpg" alt="avt" class="info_avt">
-                    <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
-                </div>
-                <div class="info__input">
-                    <!-- name -->
-                    <div class="input__edit">
-                        <div class="input">
-                            <label for="name">Full name</label>
-                            <input type="text" id="name">
-                        </div>
-                        <p class="input__text">Edit</p>
-                    </div>
-                    <hr class="content__line line1">
-                    <!-- Email -->
-                    <div class="input__edit">
-                        <div class="input">
-                            <label for="email">Email</label>
-                            <input type="text" id="email">
-                        </div>
-                        <p class="input__text">Edit</p>
-                    </div>
-                    <hr class="content__line line2">
-                    <!-- Gender -->
-                    <div class="input__edit">
-                        <div class="input">
-                            <label for="gender">Gender</label>
-                            <input type="text" id="gender">
-                        </div>
-                        <p class="input__text">Edit</p>
-                    </div>
-                    <hr class="content__line line3">
-                    <!-- Birthday -->
-                    <div class="input__edit">
-                        <div class="input">
-                            <label for="birthday">Date of birth</label>
-                            <input type="text" id="birthday">
-                        </div>
-                        <p class="input__text">Edit</p>
-                    </div>
-                    <hr class="content__line line4">
-                    <!-- Phone -->
-                    <div class="input__edit">
-                        <div class="input">
-                            <label for="phone">Phone number</label>
-                            <input type="text" id="phone">
-                        </div>
-                        <p class="input__text">Edit</p>
-                    </div>
-                    <hr class="content__line line5">
-                    <!-- Emergency contact -->
-                    <div class="input__edit">
-                        <div class="input">
-                            <label for="contact">Emergency contact</label>
-                            <input type="text" id="contact">
-                        </div>
-                        <p class="input__text">Add</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer -->
-        <div id="footer">
-            <div class="footer__contact">
-                <ul class="contact">
-                    <li class="text__title">Support</li>
-                    <li class="text__list">Irure in molli</li>
-                    <li class="text__list">Officia sit laborum</li>
-                    <li class="text__list">Lorem ea quis labore</li>
-                </ul>
-                <ul class="contact">
-                    <li class="text__title">Community</li>
-                    <li class="text__list">Nisi velit ut</li>
-                    <li class="text__list">Pariatur elit esse</li>
-                    <li class="text__list">Laborum aliquip do</li>
-                </ul>
-                <ul class="contact">
-                    <li class="text__title">About</li>
-                    <li class="text__list">Aute com</li>
-                    <li class="text__list">Volupta</li>
-                    <li class="text__list">Nulla min</li>
-                </ul>
-                <ul class="contact">
-                    <li class="text__title">Subscribe to our newsletter</li>
-                    <li class="text__list">For announcements and exclusive deals</li>
-                    <li class="contact__email">
-                        <div class="email">
-                            <i class="fa-regular fa-envelope"></i>
-                            <input type="email" class="txtEmail" placeholder="Input your email">
-                        </div>
-                        <button class="btSub">Subscribe</button>
-                    </li>
-                </ul>
-            </div>
-            <hr class="footer__line">
-            <div class="footer__list">
-                <div class="footer__note">
-                    <ul>
-                        <li class="footer__text">© 2022 Company, Inc.</li>
-                        <li class="footer__text">•</li>
-                        <li class="footer__text">Privacy</li>
-                        <li class="footer__text">•</li>
-                        <li class="footer__text">Terms</li>
+                <!-- menu -->
+                <div class="border_menu">
+                    <ul class="menu">
+                        <li><a href="">Places to stay</a></li>
+                        <li><a href="">Experiences</a></li>
+                        <li><a href="">Discover</a></li>
                     </ul>
                 </div>
-                <div class="footer__internet">
-                    <ul>
-                        <li class="text_USD">USD</li>
-                        <li><img src="./assets/img/Globe.png" alt="globe" class="icon"></li>
-                        <li><img src="./assets/img/Facebook.png" alt="FB" class="icon"></li>
-                        <li><img src="./assets/img/Twitter.png" alt="Twitter" class="icon"></li>
-                        <li><img src="./assets/img/Instagram.png" alt="Ins" class="icon"></li>
-                    </ul>
+            </div>
+            <!-- header control -->
+            <div class="header__control--right">
+                <div class="control_items text_currency">USD</div>
+                <div class="control_items">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="control_items">
+                    <i class="fa-solid fa-message-dots"></i>
+                </div>
+                <div class="control_items">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="avt_user">
+                    <img src="./assets/img/avtControl.jpg" alt="Avatar">
                 </div>
             </div>
         </div>

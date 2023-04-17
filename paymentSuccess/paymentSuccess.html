@@ -4,90 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Success</title>
     <link rel="stylesheet" href="./assets/paymentSuccess.css">
     <link rel="stylesheet" href="/Fontawesome_v6/Fontawesome_v6/css/all.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <title>Payment Success</title>
 </head>
 <body>
-    <div id="container">
+    <div class="container">
         <!-- header -->
-        <div id="header">
-            <img src="./assets/img/logo.png" alt="Logo" class="header__logo">
-            <div class="header__menu">
-                <ul>
-                    <li>Place to stay</li>
-                    <li>Experiences</li>
-                    <li>Discover</li>
-                </ul>
-            </div>
-            <div class="header__icons">
-                <ul>
-                    <li class="text_USD">USD</li>
-                    <li><img src="./assets/img/Chat_dots.png" alt="Chat dots" class="icon"></li>
-                    <li><img src="./assets/img/Globe.png" alt="Globe" class="icon"></li>
-                    <li><img src="./assets/img/Bell.png" alt="Bell" class="icon"></li>
-                    <li><img src="./assets/img/F.jpg" alt="Avatar" class="avt"></li>
-                </ul> 
-            </div>
-        </div>
-        <!-- content -->'
-        <div id="content">
-            <img src="./assets/img/img_bags.jpeg" alt="Bags" class="content__bags">
-            <p class="content__title">All done, you're going to Tokyo!</p>
-            <div class="content__status">
-                <div class="content__time">
-                    <p class="content__text"><img src="./assets/img/Calendar_blank.png" alt="Calender" class="content__icon">July 17 - 21, 2022</p>
-                    <p class="content__text"><img src="./assets/img/Map.png" alt="Map" class="content__icon">1234 Higashiasakusa, Taito City, Tokyo, Japan</p>
-                    <p class="content__text"><img src="./assets/img/Clock.png" alt="Clock" class="content__icon">Check-in: after 2PM</p>
-                    <p class="content__text"><img src="./assets/img/Clock.png" alt="Clock" class="content__icon">Check out: 11AM</p>
+        <div class="header">
+            <!-- header logo -->
+            <div class="header__logo--left">
+                <!-- logo -->
+                <div class="border_logo">
+                    <img src="./assets/img/logo.png" alt="Logo CiCi" class="logo">
                 </div>
-                <hr class="line1">
-                <div class="content__price">
-                    <p class="content__text">Amount paid (USD)</p>
-                    <p class="content__text">$273</p>
-                </div>
-                <div class="content__code">
-                    <p class="content__text">Reservation code</p>
-                    <p class="content__text">HMNK55PBZK</p>
-                </div>
-                <div class="content__info">
-                    <img src="./assets/img/bedroom.jpg" alt="Bedroom" class="bedroom">
-                    <div>
-                        <p class="info__place">Hotel room in Ueno</p>
-                        <p class="info__type">Superior Family Room</p>
-                        <hr class="line2">
-                        <p class="info__room">6 guests • 4 beds • 1 private bath</p>
-                        <div class="info__rating">
-                            <img src="./assets/img/Rating.png" alt="Rating" class="rating">
-                            <p class="assess">4.84</p>
-                            <p class="view">(324 reviews)</p>
-                        </div>
-                    </div>
+                <!-- menu -->
+                <div class="border_menu">
+                    <ul class="menu">
+                        <li><a href="">Places to stay</a></li>
+                        <li><a href="">Experiences</a></li>
+                        <li><a href="">Discover</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <!-- footer -->
-        <div id="footer">
-            <div class="footer__note">
-                <ul>
-                    <li class="footer__text">© 2022 Company, Inc.</li>
-                    <li class="footer__text">•</li>
-                    <li class="footer__text">Privacy</li>
-                    <li class="footer__text">•</li>
-                    <li class="footer__text">Terms</li>
-                </ul>
-            </div>
-            <div class="footer__internet">
-                <ul>
-                    <li class="text_USD">USD</li>
-                    <li><img src="./assets/img/Globe.png" alt="globe" class="icon"></li>
-                    <li><img src="./assets/img/Facebook.png" alt="FB" class="icon"></li>
-                    <li><img src="./assets/img/Twitter.png" alt="Twitter" class="icon"></li>
-                    <li><img src="./assets/img/Instagram.png" alt="Ins" class="icon"></li>
-                </ul>
+            <!-- header control -->
+            <div class="header__control--right">
+                <div class="control_items text_currency">USD</div>
+                <div class="control_items">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="control_items">
+                    <i class="fa-solid fa-message-dots"></i>
+                </div>
+                <div class="control_items">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="avt_user">
+                    <img src="./assets/img/avtControl.jpg" alt="Avatar">
+                </div>
             </div>
         </div>
     </div>

@@ -1,409 +1,84 @@
 * {
-    padding: 0px;
     margin: 0px;
-    font-family: "Montserrat", sans-serif;
-}
-
-#container {
-    width: 1440px;
-    height: 900px;
-    display: grid;
-    grid-template-rows: 76px auto 275px;
-}
-
-/* header */
-#header{
-    grid-row: 1/2;
-    display: flex;
-    align-items: center;
-    padding-right: 20px;
-    padding-left: 20px;
-    box-shadow: 0px 0px 1px #171a1f, 0px 0px 1px #171a1f;
-}
-
-
-/* thuộc tính chung */
-.text_USD{
-    font-size: 12px; 
-    line-height: 20px; 
-    color: #171A1FFF;
-}
-
-.icon{
-    width: 20px; 
-    height: 20px; 
-}
-
-/* thuoc tinh rieng */
-#header .header__logo{
-    width: 96px; 
-    height: 50px;
-    padding-right: 24px;
-}
-
-#header .header__menu ul{
-    list-style-type: none;
-    width: 320px; 
-    height: 32px; 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 14px; 
-    line-height: 22px;
-    color: #424955FF;
-}
-
-.header__menu ul li:hover{
-    color: #00BDD6;
-    border-bottom: 5px solid #00BDD6;
+    padding: 0px;
     box-sizing: border-box;
-}
-
-#header .header__icons ul{
-    list-style-type: none;
-    padding-left: 772px;
-    width: 188px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.header__icons .avt{
-    border-radius: 18px; 
-    width: 36px; 
-    height: 36px;
-}
-
-/* content */
-#content {
-    grid-row: 2/3;
-    grid-template-columns: 431px 1009px;
-    display: flex;
-}
-
-/* phan ben trai */
-#content .content__settings {
-    grid-column: 1/2;
-    padding: 44px 0px 339px 132px;
-}
-
-/* thuoc tinh chung */
-.list {
-    display: flex;
-    align-items: center;
-}
-
-.list__text {
-    font-size: 16px;
-    line-height: 26px;
-    color: #323842FF;
-    display: flex;
-    align-items: center;
     font-family: "Montserrat", sans-serif;
 }
 
-.button {
-    height: 36px;
+.container {
+    width: 100%;
+    height: 3001px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 0.1px solid #e8e9e9;
+    background-color: #fff;
+    z-index: 2;
+}
+.header__logo--left {
+    flex: 1;
+    margin-left: 2%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header__logo--left .border_menu {
+    flex: 1;
+    margin-left: 3%;
+}
+.border_menu .menu {
+    list-style-type: none;
+}
+.menu li {
+    display: inline-block;
+    min-width: 30%;
+}
+.menu li a {
+    padding: 20px 0px;
+    color: #424955FF;
+    text-decoration: none;
+}
+.menu li:hover a {
+    font-weight: bold;
+    color: #0095A9FF;
+    border-bottom: 3px solid #0095A9FF;
+}
+.header__control--right {
+    flex: 1;
+    margin-right: 2%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+.text_currency {
+    width: 8%;
+}
+.control_items {
+    font-size: 14px;
+    min-width: 5%;
+    color: #171A1FFF;
+}
+.avt_user {
     width: 36px;
-    padding: 0 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #F3F4F6FF;
-    opacity: 1;
-    border: none;
-    border-radius: 18px;
-    margin: 15px;
-}
-
-.fa-user,
-.fa-credit-card,
-.fa-lock-keyhole,
-.fa-sliders-simple,
-.fa-bell {
-    color: #565E6C;
-}
-
-/* thuoc tinh rieng */
-.settings__list {
-    width: 299px;
-    height: 332px;
-    border-radius: 4px;
-    box-shadow: 0px 0px 1px #171a1f, 0px 0px 2px #171a1f;
-}
-
-.fa-caret-left {
-    padding-right: 2px;
-    color: #565E6CFF;
-}
-
-.text__back {
-    font-size: 12px;
-    line-height: 20px;
-    color: #565E6C;
-    font-family: "Montserrat", sans-serif;
-}
-
-.text__acc {
-    font-family: "Poppins", sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 48px;
-    color: #171a1f;
-    padding: 6px 0 36px 0;
-}
-
-.list__text:hover {
-    color: #29C3E5FF;
-}
-
-.list__text:hover .button {
-    background-color: #BFEDF7FF;
-}
-
-.list__text:hover i {
-    color: #117389FF;
-}
-
-/* phan ben phai */
-#content .content__info {
-    grid-column: 2/3;
-    width: 781px;
-    padding: 156px 132px 0px 96px;
-}
-
-.info_avt {
-    width: 64px;
-    height: 64px;
-    border-radius: 32px;
-}
-
-.fa-pen-to-square {
-    color: #fff;
-    width: 14px;
-    height: 14px;
-}
-
-.edit {
-    position: absolute;
-    top: 268px;
-    left: 576px;
-    width: 28px;
-    height: 28px;
-    background: #323842FF;
-    border-radius: 14px;
-    border: none;
-}
-
-/* Phan dien thong tin */
-.info__input {
-    border: none;
-    padding-top: 32px;
-}
-
-/* thuoc tinh chung */
-.info__input .input {
-    margin-bottom: 33px;
-}
-
-input {
-    width: 215px;
-    height: 29px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    border-width: 0;
-    box-shadow: 0 1px 0 #ffffff;
-    outline: none;
-}
-
-label {
-    display: block;
-    font-size: 14px;
-    line-height: 22px;
-    font-family: "Montserrat", sans-serif;
-    color: #171A1F;
-}
-
-.input:hover {
-    border: 1px solid #ccc;
-    box-shadow: 0 1px 0 #ccc;
-}
-
-.input__edit {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.input__text {
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    line-height: 22px;
-    color: #323842FF;
-    text-decoration: underline;
-    padding-bottom: 31px;
-}
-
-/* thuoc tinh chung cua cac line */
-.content__line {
-    position: absolute;
-    width: 781px;
-    left: 527px;
-    border-width: 1px;
-    border-color: #DEE1E6FF;
-    border-style: solid;
-}
-
-/* thuoc tinh rieng */
-.line1 {
-    top: 396px;
-}
-
-.line2 {
-    top: 481px;
-}
-
-.line3 {
-    top: 566px;
-}
-
-.line4 {
-    top: 651px;
-
-}
-
-.line5 {
-    top: 736px;
-}
-
-/* footer */
-#footer {
-    grid-row: 3/4;
-    background-color: #F8F9FA;
-}
-
-/* footer contact */
-#footer .footer__contact {
-    padding: 40px 260px 0 132px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-/* thuoc tinh chung */
-.footer__contact ul {
-    list-style-type: none;
-    font-family: "Inter", sans-serif;
-    color: #171A1FFF;
-}
-
-.footer__contact ul li {
-    padding-bottom: 12px;
-}
-
-.text__title {
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 30px;
-}
-
-.text__list {
-    font-size: 14px;
-    line-height: 22px;
-}
-
-/* Thuoc tinh rieng */
-.fa-envelope {
-    width: 16px;
-    height: 16px;
-    color: #171A1F;
-    padding-right: 4px;
-    padding-left: 10px;
-}
-
-.contact__email {
-    display: flex;
-    align-items: center;
-}
-
-.email {
-    width: 224px;
-    height: 34px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    border: 1px solid #9095A0FF;
-    margin-right: 8px;
-}
-
-.btSub {
-    width: 102px;
     height: 36px;
-    padding: 0 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    line-height: 22px;
-    color: #FFFFFFFF;
-    background: #00BDD6;
-    opacity: 1;
-    border: none;
-    border-radius: 4px;
 }
-
-.contact__email:hover .email {
-    border: 1px solid #00A9C0;
-}
-
-.contact__email:hover .fa-envelope {
-    color: #9095A0FF;
-}
-
-.btSub:hover {
-    color: #FFFFFFFF;
-    background: #00A9C0;
-}
-
-/* line */
-.footer__line {
-    position: absolute;
-    top: 1113px;
-    left: 132px;
-    width: 1176px;
-    border-width: 1px;
-    border-color: #DEE1E6FF;
-    border-style: solid;
-}
-
-/* phan list */
-.footer__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 61px 132px 0 132px;
-}
-
-.footer__note ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    grid-column-gap: 4px;
-}
-
-.footer__note .footer__text {
-    font-size: 14px;
-    line-height: 22px;
-    color: #171A1FFF;
-    font-family: "Inter", sans-serif;
-}
-
-.footer__internet ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column-gap: 16px;
+.avt_user img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
 }
