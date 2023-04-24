@@ -33,12 +33,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
+    background-color: #fff;
 }
 
 .wrap_header .header__logo--left {
     height: 100%;
     width: 100%;
-    background-color: #fff;
     display: flex;
     align-items: center;
 }
@@ -168,6 +168,7 @@ body {
 
 .content_body .body_section1 {
     padding: 12px 0 24px 24px;
+    border-bottom: 1px solid #DEE1E6FF;
 }
 
 .content .section {
@@ -200,18 +201,6 @@ body {
 
 .section .fa-solid.fa-clock-three {
     color: #5941EDFF;
-}
-
-.content .content_line1 {
-    position: absolute;
-    top: 172px; 
-    left: 24px; 
-    width: 468px; 
-    height: 0px; 
-    border-width: 1px; 
-    border-color: #DEE1E6FF;
-    border-style: solid; 
-    transform: rotate(0.12deg);
 }
 
 .content .body_section2 {
