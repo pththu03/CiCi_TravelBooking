@@ -119,7 +119,6 @@ body {
 .content {
     width: 100%;
     padding-top: 76px;
-    background-color: bisque;
 }
 
 .content .wrap_content {
@@ -394,4 +393,125 @@ body {
     top: 40px;
     left: 30px;
     color: #fff;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 275px;
+}
+
+.wrap_footer {
+    width: 100%;
+    height: 100%;
+    background-color: #F8F9FAFF;
+    padding: 40px 132px 0;
+}
+
+/* wrap_footer_contact */
+.wrap_footer_contact {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 102px;
+}
+
+.footer_heading {
+    font-size: 20px; 
+    line-height: 30px; 
+    color: #171A1FFF;
+    margin: 0;
+}
+
+.footer_column > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_list {
+    font-size: 14px; 
+    line-height: 28px; 
+    color: #171A1FFF;
+}
+
+.footer_subHeading {
+    font-size: 12px; 
+    line-height: 20px; 
+    color: #9095A0FF;
+}
+
+.wrap_box_email {
+    display: flex;
+}
+
+.btn_email{
+    width: 224px; 
+    height: 36px;
+    border: 1px solid #9095A0FF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.btn_email > input {
+    width: 190px;
+    height: 100%;
+    background-color: #F8F9FAFF;
+    border: none;
+    outline: none;
+}
+
+.btn_email > i {
+    padding-left: 12px;
+    padding-right: 5px;
+    font-size: 16px;
+    color: #171a1f;
+}
+
+.btn_sub > button {
+    width: 102px; 
+    height: 36px; 
+    padding: 0 12px; 
+    margin-left: 8px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 14px; 
+    line-height: 22px; 
+    color: #FFFFFFFF;
+    background: #29C3E5FF; 
+    opacity: 1; 
+    border: none; 
+    border-radius: 4px;
+}
+
+.btn_sub > button:active {
+    color: #FFFFFFFF;
+    background: #00d0ff;
+}
+
+/* wrap_footer_social */
+.wrap_footer_social {
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top:  1px solid #DEE1E6FF;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+.footer .footer__note > div > span {
+    font-size: 14px; 
+    line-height: 22px; 
+    color: #171A1FFF;
+}
+
+.footer .footer__social{
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer__social > div{
+    padding: 8px;
 }
