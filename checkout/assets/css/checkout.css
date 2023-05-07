@@ -105,7 +105,18 @@ body {
     font-weight: 600;
 }
 
+.wrap_header__control--right a:nth-child(3) {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    padding-right: 20px;
+    font-size: 14px;
+    color: #171a1f;
+}
+
 .wrap_header__control--right .header__control-avatar {
+    display: block;
     width: 36px;
     height: 36px;
 }
@@ -288,6 +299,11 @@ body {
     line-height: 18px;
     color: #171A1FFF;
     margin: 24px 0 20px;
+}
+
+.confirmAndPay_button {
+    display: block;
+    text-decoration: none;
 }
 
 .confirmAndPay_button button {

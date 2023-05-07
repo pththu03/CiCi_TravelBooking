@@ -105,7 +105,18 @@ body {
     font-weight: 600;
 }
 
+.wrap_header__control--right a:nth-child(3) {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    padding-right: 20px;
+    font-size: 14px;
+    color: #171a1f;
+}
+
 .wrap_header__control--right .header__control-avatar {
+    display: block;
     width: 36px;
     height: 36px;
 }
@@ -169,6 +180,7 @@ body {
 .wrap_search .btn-search {
     width: 52px;
     height: 52px;
+    text-decoration: none;
     padding: 0px 18px;
     background-color: #00BDD6FF;
     border-radius: 50px;
