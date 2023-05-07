@@ -82,7 +82,7 @@ body {
     padding: 0px 10px;
 }
 
-.header__menu-items:hover > a {
+.header__menu-items:hover>a {
     color: #0095A9;
 }
 
@@ -92,7 +92,8 @@ body {
     position: absolute;
     top: 100%;
     left: 140px;
-    box-shadow: 0px 2px 5px #171a1f, 0px 0px 2px #171a1f;
+    background-color: #fff;
+    box-shadow: 0px 2px 7px #171a1fb3, 0px 0px 2px #474d56bf;
     z-index: 4;
 }
 
@@ -114,11 +115,6 @@ body {
     background-color: #e7e5e5;
 }
 
-
-
-
-
-
 .wrap_header .header__search--center {
     width: 100%;
     height: 44px;
@@ -132,7 +128,8 @@ body {
     justify-content: space-between;
     align-items: center;
     border-radius: 22px;
-    color: #DEE1E6FF;;
+    color: #DEE1E6FF;
+    ;
     background-color: #fff;
     box-shadow: 0px 2px 5px #171a1f, 0px 0px 2px #171a1f;
 }
@@ -197,4 +194,420 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 18px;
+}
+
+.content {
+    width: 100%;
+    margin-top: 76px;
+}
+
+.content .wrap_content {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.wrap_content .heading_content {
+    padding-top: 28px;
+}
+
+.heading_content .text_heading {
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: #171A1F;
+}
+
+.heading_content .sub_heading {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #171a1fcf;
+}
+
+.sub_heading .sub_heading--text i {
+    color: #00BDD6;
+}
+
+.sub_heading .sub_heading--text .heading--rate {
+    font-weight: 700;
+}
+
+.sub_heading .sub_heading--text .heading--reviews {
+    color: #9095A0FF;
+}
+
+.sub_heading .sub_heading--btn {
+    display: flex;
+}
+
+.sub_heading--btn .btn_sub_heading {
+    padding: 10px;
+}
+
+.wrap_content .room_view {
+    width: 100%;
+    height: 668px;
+    display: flex;
+    position: relative;
+}
+
+.room_view .room_view-main_photo {
+    flex: 8;
+    padding-right: 5px;
+}
+
+.room_view .room_view-main_photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.room_view .room_view-sub_photo {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.room_view-sub_photo img {
+    width: 100%;
+    height: 217px;
+    display: block;
+}
+
+.room_view-sub_photo img:first-child {
+    border-radius: 0px 8px 0px 0px;
+}
+
+.room_view-sub_photo img:last-child {
+    border-radius: 0px 0px 8px 0px;
+}
+
+.room_view .button-show_more {
+    padding: 8px;
+    position: absolute;
+    right: 16px;
+    bottom: 17px;
+    border-radius: 4px;
+    color: #171A1FFF;
+}
+
+.room_infor {
+    margin: 50px 0px;
+}
+
+.room_infor .wrap_room_infor {
+    display: flex;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #6d6e6f;
+}
+
+.wrap_room_infor .room_infor_overview {
+    padding-right: 60px;
+}
+
+.room_infor_overview .overview_heading {
+    font-size: 20px;
+}
+
+.room_infor_overview .overview_detail,
+.overview_text,
+ul li {
+    color: #171A1FFF;
+    font-size: 14px;
+}
+
+.room_infor_overview .overview_home i {
+    color: #00BDD6FF;
+}
+
+.room_infor_overview .overview_calendar i {
+    color: #8353E2FF;
+}
+
+.room_infor_overview ul {
+    padding-inline-start: 15px;
+}
+
+.room_infor_overview a {
+    font-size: 12px;
+    font-weight: 600;
+    color: #323842FF;
+}
+
+.room_infor_overview hr {
+    margin: 36px 0px;
+    border: 1px solid #DEE1E6FF;
+}
+
+.room_infor_offers .offers_heading {
+    font-size: 20px;
+    color: #171A1FFF;
+}
+
+.room_infor_offers .offers_list {
+    padding: 20px 0px;
+    display: flex;
+}
+
+.room_infor_offers .offers_list .offers_list--items {
+    width: 260px;
+}
+
+.offers_list--items div {
+    padding: 10px 0px;
+}
+
+.offers_list--items div span {
+    font-size: 14px;
+    color: #171A1F;
+}
+
+.offers_list--items div i {
+    display: inline-block;
+    width: 25px;
+    font-size: 18px;
+    color: #323842FF;
+}
+
+.room_infor_offers .button-show_all {
+    font-size: 12px;
+    color: #171A1FFF;
+    padding: 5px 8px;
+    background: #FFFFFFFF;
+    border: 1px solid #24282f;
+    border-radius: 4px;
+}
+
+.total_info {
+    width: 458px;
+    height: fit-content;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 9px #3b3e44, 0px 0px 0px #18191c;
+    box-sizing: border-box;
+}
+
+.total_info .line_price-star {
+    display: flex;
+}
+
+.total_info .line_price-star {
+    color: #171A1FFF;
+}
+
+.total_info .line_price-star>div:nth-child(1) {
+    width: 100%;
+    font-size: 20px;
+}
+
+.total_info .line_price-star>div:nth-child(1) span:first-child {
+    font-weight: 600;
+}
+
+.line_price-star>div:nth-child(2) {
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.line_price-star>div:nth-child(2) i {
+    margin-right: 5px;
+    color: #00BDD6;
+}
+
+.total_info .line_checkin-checkout {
+    display: flex;
+    padding-top: 24px;
+}
+
+.line_checkin-checkout div label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #3e4249;
+}
+
+.total_info .line_checkin-checkout>div {
+    width: 190px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #9095a0;
+}
+
+.line_checkin-checkout>div:first-child {
+    margin-right: 20px;
+}
+
+.line_checkin-checkout>div input {
+    padding-top: 10px;
+    border: none;
+    outline: none;
+    color: #6d6e6f;
+}
+
+.total_info .line_guests {
+    padding-top: 20px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #9095a0;
+}
+
+.line_guests label {
+    display: block;
+}
+
+.line_guests select {
+    width: 100%;
+    padding-top: 5px;
+    border: none;
+    outline: none;
+    color: #242526;
+}
+
+.total_info .lines_price {
+    margin-top: 40px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #9095a0;
+}
+
+.lines_price .line_price {
+    display: flex;
+    padding: 4px 0px;
+    font-size: 14px;
+    color: #171A1FFF;
+}
+
+.lines_price .line_price>div:first-child {
+    width: 100%;
+}
+
+.lines_price .line_price .price--green {
+    font-weight: 600;
+    color: #17A948FF;
+}
+
+.lines_price .line_price i {
+    color: #3b4049;
+}
+
+.total_info .total_price {
+    margin-top: 16px;
+}
+
+.total_price .line_total_text-price {
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    color: #171A1FFF;
+}
+
+.line_total_text-price .text_total {
+    width: 100%;
+}
+
+.total_price .button_resever {
+    width: 100%;
+    padding: 10px 0px;
+    margin-top: 16px;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFFFF;
+    background-color: #00BDD6FF;
+    border-radius: 6px;
+}
+
+.total_price>div:last-child {
+    font-size: 12px;
+    color: #171A1FFF;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.wrap_content .reviews_content {
+    width: 100%;
+}
+
+reviews_content .wrap_reviews {
+    width: 100%;
+}
+
+.wrap_reviews .heading_review {
+    font-size: 20px;
+}
+
+.heading_review i {
+    color: #00BDD6;
+}
+
+.heading_review span:nth-child(2) {
+    font-weight: 600;
+    color: #171A1FFF;
+}
+
+.heading_review span:nth-child(3) {
+    color: #9095A0FF;
+}
+
+.wrap_reviews .line_comment {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+.line_comment .comment_review {
+    width: 504px;
+    padding-right: 23px;
+}
+
+.comment_review .user {
+    width: 100%;
+    display: flex;
+}
+
+.user .user__avatar {
+    width: 44px;
+    height: 44px;
+}
+
+.user__avatar img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 36px;
+}
+
+.user .user_name--date_comment {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.user_name--date_comment .user_name {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 0px;
+    color: #171A1FFF;
+}
+
+.user_name--date_comment .date_comment {
+    font-size: 12px;
+    color: #9095A0FF;
+}
+
+.comment_review .comment_text {
+    padding-top: 10px;
+    font-size: 14px;
+    color: #3b3e44;
+}
+
+.wrap_reviews .button-show_all {
+    /* width: 152px; */
+    width: fit-content;
+    margin-top: 36px;
+    font-size: 12px;
+    color: #171A1FFF;
+    padding: 5px 8px;
+    background: #FFFFFFFF;
+    border: 1px solid #24282f;
+    border-radius: 4px;
 }
